@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icons/android-chrome-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+TAS+Beginner&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Raj Pawar</title>
+</head>
+
+<body>
+    <div id="top" class="top-container">
+        <img class="top-img" src="images/cloud.png" alt="cloud-img">
+        <h1 id="raj">I'm Raj.</h1>
+        <h2 id="dev">a web <span class="develop">develop</span>er.</h2>
+        <img class="bottom-img" src="images/cloud.png" alt="cloud-img">
+        <img name="img" class="background-img" src="images/home green.svg" alt="Home-img" onclick="propertyChange()">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+            <img class="my-pic" src="images\raj.png" alt="raj image">
+            <h2 id="hello">Heyy.</h2>
+            <p class="personal-info">I am a student, just completed Deploma From Bharti Vidhya Peeth, Kharghar, Navi
+                Mumbai.
+                I have a Beginner skill of coding, basic logics ⭐ and capable to learn more.
+                I love ❤️ coding 💻, maths 📘, music 🎵, chilling vibes 💫, games 🎮.
+                I love things in dark mode do you ?, if so click here 👉 <strong onclick="myFunction()"> Dark-Mode.
+                </strong>
+            </p>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2 id="skill">My Skills.</h2>
+            <div class="skill-row">
+                <img class="computer-img" src="images/programming.svg" alt="">
+                <h3>Data structures and algorithms</h3>
+                <p class="text">good knowledge of algorithms and data structures, and object-oriented programming
+                    Proficient in C/C++ and Java programming languages.</p>
+            </div>
+            <div class="skill-row">
+                <img class="game-img" src="images/gaming.svg" alt="">
+                <h3>Programming</h3>
+                <p class="text"> A Quiet Beginner Skills with Creativity , A passion for video games, Which Keeps me
+                    Motivated. Have little bit of expirence in gaming, You can check out My First Game
+                    <a id="nunio" href="https://thunder03.itch.io/nunio">Nunio</a>. In future will come up will more
+                    Awesome games.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you love playing games more than anything.</h3>
+            <p class="text">If you love playing games like I do?<br> Let's have some Games together!!!</p>
+            <a class="btn" href="mailto:rajpawar1808@email.com">CONTACT ME</a>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/raj-pawar-23979821a/">LinkedIn</a>
+        <a class="footer-link" href="https://www.facebook.com/people/Raj-Pawar/100026984623020/">Meta</a>
+        <a class="footer-link" href="index.html">Website</a>
+        <p class="copyright">© Raj Pawar.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            if (document.getElementById('top').style.background == "rgb(22, 38, 36)") {
+                window.location.reload();
+            }
+
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            document.getElementById('top').style.background = '#162624';
+            document.getElementById('nunio').style.color= 'rgb(51, 168, 174)';
+        }
+
+        function propertyChange() {
+            if (document.getElementById('raj').style.color == "black") {
+                window.location.reload();
+            }
+            document["img"].src = "images/home black.svg";
+            document.getElementById('raj').style.color = 'black';
+            document.getElementById('dev').style.color = 'black';
+        }
+    </script>
+</body>
+
+</html>
